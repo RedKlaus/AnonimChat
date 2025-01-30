@@ -1,0 +1,12 @@
+database:
+  log_debug: false  # true/false
+dialog_loop:
+  sleep_time: 2  # Время в секундах сколько ждать перед обновлением поиска собеседников
+  max_users: 1000  # Сколько максимально пользователей могут общаться на данном процессе
+aiogram_fms_redis:
+  redis_storage_ttl_minutes: 5  # Через сколько минут после последнего обновления состояния оно удалится
+forbidden_message:
+  forbidden_text_list:
+    - '@'
+  forbidden_regex_list:
+    - '(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+'
